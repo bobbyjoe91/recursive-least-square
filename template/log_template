@@ -1,0 +1,13 @@
+{% for data in bundle %}Chord: {{data.chord}}
+
+Chroma values: {{data.chroma}}
+Result: {{data.chord_list}} -> {{data.result}}
+
+==========================================================================================
+{% endfor %}
+Final result = {{result_list}}
+
+Overall accuracy = {{accuracy}}%
+Macro-average precision = {{metrics.precision * 100}}%
+Macro-average recall = {{metrics.recall * 100}}%
+Macro-average f1-score = {{metrics['f1-score'] * 100}}%
